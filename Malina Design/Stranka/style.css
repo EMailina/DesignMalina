@@ -68,9 +68,17 @@ header .navigation li a {
     color: #fff;
     font-size: 0.9rem;
     margin-right: 20px;
+    font-weight: 300;
+
+}
+
+header .navigation li a.aktivne {
+    color: var(--red-color);
+    border-bottom: 2px solid var(--red-color);
 }
 
 header .navigation li a:hover {
+
     color: var(--red-color);
     border-bottom: 2px solid var(--red-color);
 }
@@ -80,6 +88,57 @@ header .navigation li a:hover {
 
 }
 
+h2 {
+    font-size: 4em;
+    left: 20%;
+    color: #fff;
+}
+
+p {
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.uvod {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background: url(obrazky/pozadie1.png) center;
+    text-align: center;
+}
+
+.uvod .content {
+    margin-left: 20%;
+}
+
+.podnadpis {
+
+    color: var(--red-color);
+    font-size: 1.5em;
+
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: var(--red-color);
+    padding: 0.3em 1em;
+    display: inline-block;
+    border-radius: 3em;
+    border: solid transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transition: 0.5s;
+
+    padding: 0.3em 3em;
+
+}
 
 @media (max-width: 1000px) {
 
