@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --red-color: #fa0303;
+    --green-color: #0a9745;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'arial', sans-serif;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 10px 100px;
+    z-index: 10000;
+    display: block;
+    justify-content: space-between;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    background: #212121;
+}
+
+
+header .logo {
+    position: absolute;
+    background-image: url("Obrazky/untitled-1.png");
+    object-fit: none;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 10px;
+
+}
+
+header .logoName {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    top: -.5rem;
+    float: left;
+}
+
+header .navigation {
+    float: right;
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    color: #fff;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+header .navigation li a:hover {
+    color: var(--red-color);
+    border-bottom: 2px solid var(--red-color);
+}
+
+.menuIcon {
+    display: none;
+
+}
+
+
+@media (max-width: 1000px) {
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
