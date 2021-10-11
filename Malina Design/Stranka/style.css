@@ -210,7 +210,7 @@ p {
     justify-content: space-evenly;
     margin: 30px 0 70px 0;
     flex-wrap: wrap;
-
+    flex-direction: row;
 }
 
 .portfolio .box {
@@ -264,17 +264,129 @@ section {
     margin-bottom: 150px;
 }
 
+footer{
+    position: static;
+}
 
+.footer-body p {
+    color: white;
+}
+.footer-body{
+    background-color: #212121;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    width:100%;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    font-size: 0.7em;
+}
 
+.footer-body .footer-left,.footer-body .footer-center,.footer-body .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-body .footer-left{
+    width: 30%;
+
+}
+
+.footer-body h2{
+    color: white;
+    margin:0;
+}
+.footer-body  p{
+    margin-left:0;
+}
+
+.footer-body .footer-links a{
+    color: white;
+    margin: 20px 0 12px;
+    text-decoration: none ;
+    display: inline-block;
+
+}
+
+.footer-body .footer-company-name{
+    color:var(--red-color);
+    font-size: 1em;
+    margin:0;
+
+}
+
+.footer-body .footer-center{
+    width: 35%;
+}
+
+.footer-body .footer-center i{
+    text-align: center;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    margin:10px 15px;
+    vertical-align: middle;
+    color: white;
+    font-size: 1.5em;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+}
+.footer-body .footer-center i.fa-envelope{
+    font-size: 1.5em;
+
+}
+
+.footer-body .footer-center p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+
+}
+
+.footer-body .footer-right{
+    width: 30%;
+
+}
+
+.footer-body .footer-icons{
+   margin-top:25px;
+    color: white;
+}
+
+.footer-body .footer-icons a {
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5em;
+    /*background-color: white*//*var(--red-color);*/
+}
+.footer-body .footer-icons .btn {
+    margin-top: 20px;
+}
+.footer-body .footer-icons a:hover {
+    color: var(--red-color);
+}
 @media (max-width: 1000px) {
     .portfolio .box {
 
         flex: 0 0 45%;
         margin: 30px 0;
     }
-    .grid   {
-
-        flex-direction: column;
+    .footer-body .footer-left, .footer-body .footer-center, .footer-body .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-body .footer-center {
+        margin-left: 15%;
+        text-align: left;
     }
 
 }
