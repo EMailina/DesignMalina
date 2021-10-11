@@ -121,7 +121,7 @@ section {
     position: relative;
     float: right;
     margin: 30px;
-    box-shadow: rgba(0,0,0,0.5);
+    box-shadow: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     border: 3px solid #212121;
     background: url("obrazky/fotka2.png") center;
@@ -133,7 +133,7 @@ h2 {
     left: 20%;
     color: var(--red-color);
     margin-bottom: 20px;
-    display:block;
+    display: block;
 }
 
 .content h2 {
@@ -143,12 +143,14 @@ h2 {
     margin-bottom: 0;
 }
 
-.about a {
-    left: 50%;
-    margin: 20px;
-    transform: translateX(-50%);
+.stred {
+
+    /*   margin: 20px;*/
     position: relative;
+    transform: translateX(-50%);
+    left: 50%;
 }
+
 p {
     font-weight: 300;
     color: #212121;
@@ -195,16 +197,92 @@ p {
 
 }
 
-.portfolio{
+.portfolio {
+    width: 80%;
+
     position: relative;
+    left: 10%;
+    overflow: hidden;
 }
 
-section{
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 70px 0;
+}
+
+.portfolio .box {
+    max-width: 300px;
+    flex: 0 0 30%;
+    padding: 10px;
+
+    overflow: hidden;
+    width: 200px;
+
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 240px;
+
+    /*  position: absolute;*/
+
+}
+
+.portfolio .box .photo {
+    background: url("obrazky/vektor.jpg") center;
+    margin: 0 15px 0 15px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height: 200px;
+}
+
+.portfolio .box .detail {
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+
+
+}
+
+.portfolio .box .photo2 {
+    background: url("obrazky/logo3.png") center;
+    margin: 0 15px 0 15px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height: 200px;
+}
+
+.portfolio .box .photo3 {
+    background-image: url("Obrazky/logo.png");
+}
+.portfolio.box:nth-child(3) .photo {
+    background-image: url("Obrazky/ProDetailShop.png");
+}
+
+section {
     margin-bottom: 150px;
 }
 
 @media (max-width: 1000px) {
+    .portfolio .box {
 
+        flex: 0 0 20%;
+        padding: 10px;
+
+        overflow: hidden;
+        width: 200px;
+
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        height: 240px;
+
+        /*  position: absolute;*/
+
+    }
 
 }
 
