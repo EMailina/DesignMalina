@@ -2,11 +2,12 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kontakt - Malina Design</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width"/>
     <script src="https://kit.fontawesome.com/ad2dfad92d.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <link rel="icon" href="Obrazky/logoS.png">
 </head>
 <body>
 
@@ -14,16 +15,16 @@
     <!--<a href="#" class="logo"><img src="images/logo1.png"></a>-->
     <a href="domov.html" class="logo"></a>
     <a href="domov.html" class="logoName">Malina Design</a>
-
+    <!--<div class="menuToggle"></div>-->
     <div class="menuIcon">
         <i class="fas fa-bars"></i>
     </div>
     <ul class="navigation">
         <li><a href="domov.html">Domov</a></li>
-        <li><a href="Omne.html">O nás</a></li>
-        <li><a href="">Portfólio</a></li>
-        <li><a href="">Pre firmy</a></li>
-        <li><a href="kontakt.html" class="aktivne">Kontakt</a></li>
+        <li><a href="Onas.html">O nás</a></li>
+        <li><a href="Portfolio.html">Portfólio</a></li>
+        <!--<li><a href="">Pre firmy</a></li>-->
+        <li><a href="#" class="aktivne">Kontakt</a></li>
 
     </ul>
 
@@ -34,9 +35,9 @@
 <section class="contact">
     <div class="content">
         <h2>Kontaktujte nás</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolorum, exercitationem facere illo illum
-            impedit in ipsam officiis, perspiciatis possimus qui quidem quo, veniam veritatis. Est rem tenetur
-            totam?</p>
+        <p>Ak Vás naša stránka zaujala a máte akékoľvek otázky, neváhajte nás kontaktovať. Ak ste neistý či sme pre Vašu
+            spoločnosť to pravé, rozhodne sa príďte pozrieť aj na našu pobočku v Žiline a možme sa pre dobrej káve
+            porozprávať o možnostiach, ktoré Vám vieme ponúknuť a skúsenostiach, ktoré sme už nadobudli a vedeli zrealizovať.</p>
     </div>
     <div class="container">
         <div class="contact-info">
@@ -64,27 +65,27 @@
                 </div>
             </div>
         </div>
-    <div class="contact-form">
-        <form>
-            <h2>Pošli nám správu</h2>
-            <div class="input-box">
-                <input type="text" name="" required="required">
-                <span>Meno a priezvisko</span>
-            </div>
-            <div class="input-box">
-                <input type="text" name="" required="required">
-                <span>Email</span>
-            </div>
-            <div class="input-box">
-               <textarea required="required"></textarea>
-                <span>Správa</span>
-            </div>
-            <div class="input-box">
-                <input type="submit" name="" value="Odoslať">
+        <div class="contact-form">
+            <form>
+                <h2>Pošli nám správu</h2>
+                <div class="input-box">
+                    <input type="text" name="name" required="required" >
+                    <span>Meno a priezvisko</span>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="mail" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="input-box">
+                    <textarea required="required"></textarea>
+                    <span>Správa</span>
+                </div>
+                <div class="input-box">
+                    <input type="submit" name="send" value="Odoslať">
 
-            </div>
-        </form>
-    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
@@ -94,11 +95,11 @@
         <h2> Malina Design</h2>
         <p class="footer-links">
 
-            <a href="domov.html">Domov</a> |
-            <a href="Omne.html">O mne</a> |
-            <a href="">Portfólio</a> |
-            <a href="">Pre firmy</a> |
-            <a href="">Kontakt</a>
+            <a href="domov.html" class="aktivne">Domov</a> |
+            <a href="Onas.html">O nás</a> |
+            <a href="Portfolio.html">Portfólio</a> |
+            <!-- <a href="">Pre firmy</a> |-->
+            <a href="#">Kontakt</a>
         </p>
         <p class="footer-company-name">Copyright © 2021 Malina Design All rights reserved</p>
     </div>
@@ -114,26 +115,24 @@
         </div>
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="erik55.malina@gmail.com">erik55.malina@gmail.com</a></p>
+            <p>erik55.malina@gmail.com</p>
         </div>
     </div>
 
     <div class="footer-right">
         <p class="footer-company-about">
-            <span>Kontakt</span>
-            <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
-            and
-            Effects along with
-            HTML, JavaScript and Projects using C/C++.
+            <span>Kontaktujte</span>
+            <strong>Malina Design</strong>, nová a stále populárnejšia forma grafiky a dizajnu na Slovensku aj v
+            zahraničí.
         </p>
         <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/em_design.er/?hl=sk" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/?lang=sk" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/?gl=SK&tab=w1" target="_blank"><i class="fa fa-youtube"></i></a>
         </div>
-        <a href="" class="btn">Kontaktujte ma</a>
+        <a href="kontakt.html" class="btn">Kontaktujte nás</a>
     </div>
 
 

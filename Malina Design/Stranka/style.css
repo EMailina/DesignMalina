@@ -2,7 +2,7 @@
 
 :root {
     --red-color: #fa0303;
-    --green-color: #0a9745;
+
 }
 
 
@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'arial', sans-serif;
     scroll-behavior: smooth;
-    text-wrap: normal;
+
 
 }
 
@@ -100,7 +100,7 @@ section {
     margin-bottom: 50px;
 }
 
-.about {
+.about, .team-section {
     width: 80%;
 
     position: relative;
@@ -117,11 +117,11 @@ section {
 .about .photo {
     width: 200px;
     height: 200px;
-    shape-outside: circle();
+    /*shape-outside: circle(50%);*/
     position: relative;
     float: right;
-    margin: 30px;
-    box-shadow: rgba(0, 0, 0, 0.5);
+    margin: 20px 30px 30px 30px;
+
     /*border-radius: 50%;*/
     /*border: 3px solid #212121;*/
     object-fit: cover;
@@ -159,10 +159,10 @@ p {
     margin-bottom: 15px;
 }
 
-.uvod {
+.banner {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -170,7 +170,7 @@ p {
     text-align: center;
 }
 
-.uvod .content {
+.banner .content {
     margin-left: 20%;
 }
 
@@ -182,7 +182,7 @@ p {
     margin-bottom: 1em;
 }
 
-.uvod .btn {
+.banner .btn {
     margin-top: 0;
 }
 
@@ -212,22 +212,41 @@ p {
     overflow: hidden;
 }
 
-.grid {
+.grid, .portfolio-grid {
     display: flex;
     justify-content: space-evenly;
     margin: 30px 0 0 0;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+.portfolio-grid{
+    justify-content: space-around;
+}
 .portfolio .box {
     overflow: hidden;
-    max-width: 300px;
-    flex: 0 0 30%;
+    width: 300px;
+
     padding: 10px;
     flex-wrap: wrap;
 
     margin: 50px 0;
+    text-align: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio .box-wide {
+    overflow: hidden;
+
+
+    padding: 10px;
+    flex-wrap: wrap;
+
+    margin: 50px auto;
     text-align: center;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -246,14 +265,14 @@ img {
 
 }
 
-.portfolio .box img {
+.portfolio .box img,.portfolio-grid img {
     width: 100%;
 
-    padding: 0 15px 0 15px;
+    padding: 20px 20px 0 20px;
     height: 200px;
 }
 
-.portfolio .box:hover {
+.portfolio .box:hover, .team-card .card:hover {
     transform: scale(1.1);
 }
 
@@ -273,6 +292,7 @@ section {
 
 footer {
     position: static;
+
 }
 
 .footer-body p {
@@ -285,7 +305,7 @@ footer {
     text-align: left;
     box-sizing: border-box;
     width: 100%;
-    padding: 50px 50px 60px 50px;
+    padding: 50px 10% 60px ;
     margin-top: 80px;
     font-size: 0.7em;
 }
@@ -415,7 +435,7 @@ h1 {
 }
 
 .about .team {
-
+    text-align: center;
     margin-left: 5%;
 }
 
@@ -434,7 +454,7 @@ h1 {
     float: right;
     right: 1rem;
     color: white;
-    font-weight: 0;
+    /*font-weight: 0;*/
     flex-direction: column;
     justify-content: space-between;
     font-size: 1.2rem;
@@ -456,13 +476,14 @@ h1 {
     padding: 10px;
     flex-wrap: wrap;
 
-    margin: 10px 20px 50px ;
+    margin: 10px 20px 50px;
     text-align: center;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     height: 350px;
     display: inline-block;
     position: relative;
+    transition: all .2s ease-in-out;
 
 }
 
@@ -499,7 +520,7 @@ h1 {
     font-size: 0.8em;
 }
 
-.contact{
+.contact {
     /*min-height: 100vh;*/
     width: 80%;
 
@@ -512,11 +533,13 @@ h1 {
     flex-direction: column;
     text-align: center;
 }
-.contact .content h2{
+
+.contact .content h2 {
     font-size: 2em;
     color: var(--red-color);
 }
-.contact .container{
+
+.contact .container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -526,20 +549,22 @@ h1 {
 
 
 }
+
 .contact .container .contact-info {
     width: 50%;
     display: flex;
     flex-direction: column;
 
 }
-.contact .container .contact-info .box{
+
+.contact .container .contact-info .box {
     position: relative;
-    padding: 20px ;
+    padding: 20px;
     display: flex;
 
 }
 
-.contact .container .contact-info .box .icon{
+.contact .container .contact-info .box .icon {
     width: 40px;
     border-radius: 50%;
     height: 40px;
@@ -549,19 +574,23 @@ h1 {
     align-items: center;
     color: white;
 }
+
 .contact .container .contact-info .box .text {
     display: flex;
     margin-left: 20px;
     font-size: 0.8em;
     flex-direction: column;
 }
-.contact .container .contact-info .box p{
-    margin:0;
+
+.contact .container .contact-info .box p {
+    margin: 0;
 }
-.contact .container .contact-info .box .text h3{
+
+.contact .container .contact-info .box .text h3 {
     color: var(--red-color);
 }
-.contact .container .contact-form{
+
+.contact .container .contact-form {
     font-size: 0.7em;
     width: 40%;
 
@@ -569,15 +598,17 @@ h1 {
     padding: 40px;
 
 }
-.contact-form .input-box{
+
+.contact-form .input-box {
     position: relative;
     width: 100%;
     margin-top: 10px;
 
 }
-.contact-form .input-box input,.contact-form .input-box textarea{
+
+.contact-form .input-box input, .contact-form .input-box textarea {
     width: 100%;
-   padding: 5px 0;
+    padding: 5px 0;
     font-size: 1em;
     margin: 10px 0;
     border: none;
@@ -585,56 +616,66 @@ h1 {
     border-bottom: 2px solid #212121;
     resize: none;
 }
-.contact-form .input-box span{
+
+.contact-form .input-box span {
     position: absolute;
     left: 0;
     padding: 5px 0;
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color:black
+    color: black
 }
+
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box input:valid ~ span,
 .contact-form .input-box textarea:focus ~ span,
-.contact-form .input-box textarea:valid ~ span{
+.contact-form .input-box textarea:valid ~ span {
     color: #212121;
     font-size: 12px;
     transform: translateY(-20px);
     color: var(--red-color);
 }
-.contact-form .input-box input[type = "submit"]
-{
+
+.contact-form .input-box input[type = "submit"] {
     width: 100%;
     background: var(--red-color);
     color: white;
     cursor: pointer;
-    border:none;
+    border: none;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2em;
     font-weight: 300;
 }
-
+.team-section {
+    margin-top: 30px;
+    text-align: center;
+}
 @media (max-width: 1000px) {
 
-    .contact{
+    .contact {
 
     }
-    .contact .container{
+
+    .contact .container {
         flex-direction: column;
     }
-    .contact .contact-info{
+
+    .contact .contact-info {
         margin-bottom: 40px;
     }
+
     .contact .container .contact-info,
     .contact .container .contact-form {
-    width: 100%;
+        width: 100%;
     }
+
     .team .container {
         flex: 0 0 45%;
         margin: 30px 0;
     }
+
     .portfolio .box {
 
         flex: 0 0 45%;
@@ -660,6 +701,10 @@ h1 {
 
 
 @media (max-width: 800px) {
+    p {
+        margin-left: 0;
+    }
+
     .menuIcon {
         display: flex;
     }
@@ -704,15 +749,43 @@ h1 {
 
 @media (max-width: 600px) {
 
+    .portfolio .box{
+        width: 300px;
+        height: auto;
+    }
+    .contact .container .contact-form {
+        padding: 0;
+    }
 
-    .footer-body .footer-center i{
+    .contact .contact-info {
+        text-align: center;
+
+
+    }
+
+    .contact-info .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info .box .icon {
+        margin-bottom: 10px;
+    }
+
+    .contact .container .contact-info .box .text {
+        margin: 0;
+    }
+
+    .footer-body .footer-center i {
         margin: 10px 0;
     }
+
     .team .container {
 
         flex-direction: column;
         align-items: center;
     }
+
     .grid {
 
         flex-direction: column;
@@ -723,13 +796,65 @@ h1 {
         padding-left: 10%;
 
     }
+
+    .banner .content {
+        margin: auto;
+
+    }
+
+    .about p {
+        text-align: left;
+        margin: auto;
+    }
+
+    header .logo {
+        left: 20px;
+    }
+    header .logoName {
+        padding-left: 60px;
+    }
 }
-@media (max-width: 300px) {
+
+@media (max-width: 320px) {
+    .portfolio .box{
+        width: auto;
+        height: auto;
+    }
+
+    .team-section {
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team .container .card {
+        width: auto;
+        height: auto;
+    }
+
+    header .logoName {
+        visibility: hidden;
+    }
+
+    .about .photo {
+        /*shape-outside: none;*/
+        margin: 5px;
+    }
+
+    .footer-body {
+        padding: 50px 10px;
+    }
+
     .footer-body .footer-center {
         padding-left: 0;
 
     }
+
     .footer-body .footer-center {
         font-size: 0.7rem;
+    }
+
+    .footer-body .footer-center p {
+        font-size: 0.8em;
     }
 }
