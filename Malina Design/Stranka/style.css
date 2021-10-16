@@ -631,7 +631,7 @@ h1 {
 .contact-form .input-box input:valid ~ span,
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span {
-    color: #212121;
+
     font-size: 12px;
     transform: translateY(-20px);
     color: var(--red-color);
