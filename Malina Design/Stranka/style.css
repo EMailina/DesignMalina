@@ -130,7 +130,7 @@ section {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     left: 20%;
     color: var(--red-color);
     margin-bottom: 20px;
@@ -229,7 +229,7 @@ p {
     padding: 10px;
     flex-wrap: wrap;
 
-    margin: 50px 0;
+    margin: 50px 20px;
     text-align: center;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -272,7 +272,7 @@ img {
     height: 200px;
 }
 
-.portfolio .box:hover, .team-card .card:hover {
+.portfolio .box:hover, .team-card .card:hover,.portfolio .box-wide:hover {
     transform: scale(1.1);
 }
 
@@ -537,6 +537,7 @@ h1 {
 .contact .content h2 {
     font-size: 2em;
     color: var(--red-color);
+    margin-bottom: 20px;
 }
 
 .contact .container {
@@ -748,7 +749,9 @@ h1 {
 }
 
 @media (max-width: 600px) {
-
+    .portfolio-grid{
+        align-items: center;
+    }
     .portfolio .box{
         width: 300px;
         height: auto;
@@ -767,6 +770,7 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
+
 
     .contact-info .box .icon {
         margin-bottom: 10px;
@@ -813,6 +817,15 @@ h1 {
     header .logoName {
         padding-left: 60px;
     }
+    .portfolio-grid {
+        flex-direction: column;
+    }
+    .about .photo {
+        /*shape-outside: none;*/
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 @media (max-width: 320px) {
@@ -820,7 +833,11 @@ h1 {
         width: auto;
         height: auto;
     }
-
+    .portfolio-grid .box{
+        width: 200px;
+        height: auto;
+        padding: 0;
+    }
     .team-section {
         margin-top: 30px;
         width: 100%;
@@ -836,10 +853,7 @@ h1 {
         visibility: hidden;
     }
 
-    .about .photo {
-        /*shape-outside: none;*/
-        margin: 5px;
-    }
+
 
     .footer-body {
         padding: 50px 10px;
